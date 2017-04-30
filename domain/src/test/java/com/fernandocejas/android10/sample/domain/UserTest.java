@@ -1,12 +1,12 @@
 /**
  * Copyright (C) 2015 Fernando Cejas Open Source Project
- *
+ * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
+ * <p>
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * <p>
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -22,19 +22,19 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class UserTest {
 
-  private static final int FAKE_USER_ID = 8;
+    private static final int FAKE_USER_ID = 8;
 
-  private User user;
+    private User user;
 
-  @Before
-  public void setUp() {
-    user = new User(FAKE_USER_ID);
-  }
+    @Before
+    public void setUp() {
+        user = new User(FAKE_USER_ID);
+    }
 
-  @Test
-  public void testUserConstructorHappyCase() {
-    final int userId = user.getUserId();
+    @Test
+    public void testUserConstructorHappyCase() {
+        final int userId = user.getUserId();
 
-    assertThat(userId).isEqualTo(FAKE_USER_ID);
-  }
+        assertThat(userId).isEqualTo(FAKE_USER_ID);
+    }
 }
