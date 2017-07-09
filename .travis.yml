@@ -46,7 +46,7 @@ android:
 script:
   - echo "Travis branch is $TRAVIS_BRANCH"
   - echo "Travis branch is in pull request $TRAVIS_PULL+REQUEST"
-  - ./gradlew connectedAndroidTest coveralls
+  #- ./gradlew connectedAndroidTest coveralls
 
 before_install:
   - chmod +x gradlew
